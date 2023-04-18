@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form 1</title>
+    <style>
+        table, th, td {
+            border:1px solid black;
+            
+        }
+    </style>
+</head>
+<body>
+    <h2>Form 1</h2><br>
+    <form>
+    <table style="width: 700px; height: 400px;">
+        <tr>
+            <td>NAME:</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>IC.NO:</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td rowspan="2">ADDRESS:<br><br><br></td>
+            <td rowspan="2"><input type="text"></td>
+        </tr>
+        <tr>
+           
+        </tr>
+        <tr>
+            <td>Gender:</td>
+            <td><input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">female</label>
+    </td>
+        </tr>
+        <tr>
+            <td>Dance Type:</td>
+            <td><input type="checkbox" id="zapin" name="Dance" value="Zapin">
+                <label for="zapin">Zapin</label>
+                <input type="checkbox" id="joget" name="Dance" value="Joget">
+                <label for="joget">Joget</label>
+                <input type="checkbox" id="inang" name="Dance" value="Inang">
+                <label for="inang">Inang</label>
+                <input type="checkbox" id="lion dance" name="Dance" value="Lion Dance">
+                <label for="lion dance">Lion Dance</label>
+            </td>
+        </tr>
+        <tr>
+            <td>Competition:</td>
+            <td>
+                <div style="overflow-y: scroll;">
+                state level<br>
+                national level<br>
+                international level<br>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Nationality:</td>
+            <td><select name="please select" id="please select">
+                <!-- <option value="india"></option> -->
+                <option value="state level">State Level</option>
+                <option value="national level">National Level</option>
+                <option value="international level">international Level</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td><input type="text"></td>
+        </tr>
+    </table>
+    </form><br><br>
+
+    <input type="submit" value="Register Me">
+    <input type="reset" value="Cancel">
+</body>
+</html>
